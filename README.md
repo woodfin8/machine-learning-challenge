@@ -12,7 +12,7 @@ Applying machine learning classification models to NASA's Kepler exo-planet data
 ## General info
 Random Forest and K-Nearest Neighbor classification models were trained and tested with the exo-planet data. There are three possible classes.
 CONFIRMED: The object identified by the Kepler telescope is confirmed as an exo-planet
-CANDIDATE: The object is a candiated for exo-planet designation
+CANDIDATE: The object is a candidate for exo-planet designation
 FALSE POSITIVE: An object of interest that has failed at least one exo-planet test.
 
 Redundant and un-necessary columns were removed, leaving the following eleven features for the models 
@@ -36,7 +36,7 @@ Tuned KNN: n_neighbors = 21, weights = distance
 |Tuned Forest| 0.9016 |
 |Tuned KNN| 0.8410 |
 
-The Tuned Random Forest model had the highest accuracy when classifying the test data. This was a slight improvement over its Un-Tuned version (less than 3 one-thousandths of a percent). Both the versions of the KNN model had lower accuraciesthan the Un-Tuned Random Forest's.
+The Tuned Random Forest model had the highest accuracy when classifying the test data. This was a slight improvement over its Un-Tuned version (less than 3 one-thousandths of a percent). Both the versions of the KNN model had lower accuracies than the Un-Tuned Random Forest's.
 
 ## Technologies
 * Jupyter notebook - version 4.1

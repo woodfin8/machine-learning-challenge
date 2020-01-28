@@ -22,35 +22,28 @@ Descriptions of features: https://exoplanetarchive.ipac.caltech.edu/docs/API_kep
 
 The classes were turned to numerical values via 'LabelEncoder'. Feature data was scaled with 'MinMaxScaler' before running Random Forest and KNN models. 'GirdSearchCV' was then used to tune hyper-parameters of both models. 
 
+Hyper-parameters selected befre and after-tuning with 'GridSearchCV'
+Un-tuned Forest: n_estimators = 100
+Tuned Forest: n_estimators = 200, max_depth = 50
+Un-tuned KNN: n_neighbors = 5
+Tuned KNN: n_neighbors = 21, weights = distance
+
 ## Results
-| |Testing Data Score|
+|Model|Testing Data Score|
 |---|---|
-|Forest| 0.8987 |
-|KNN| 0.9016 |
-|Tuned Forest| 0.8284 |
+|Un-tuned Forest| 0.8987 |
+|Un-tuned KNN| 0.8284 |
+|Tuned Forest| 0.9016 |
 |Tuned KNN| 0.8410 |
 
-
-
-
+The Tuned Random Forest model had the highest accuracy when classifying the test data. This was a slight improvement over its Un-Tuned version (less than 3 one-thousandths of a percent). Both the versions of the KNN model had lower accuraciesthan the Un-Tuned Random Forest's.
 
 ## Technologies
-
-### Languages Used
-
-* Python
-
-### Data Extraction, Cleaning and Reverse Geo-coding
-
 * Jupyter notebook - version 4.1
 * Python - version 3.7.3
 * Pandas - version 0.23.4
-* Numpy - version 1.15.4
-* Glob 
-* uszipcode - version 0.2.4 
-
-### Data Rendering and Visualization
-
-* Tableau Public - version 2019.4
+* Sklearn - version 0.22.1
 
 ## Resources
+https://www.kaggle.com/nasa/kepler-exoplanet-search-results
+https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html#pdisposition

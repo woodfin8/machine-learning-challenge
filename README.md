@@ -66,4 +66,5 @@ Features of the orbited star were tested but found to be un-informative (koi_ste
 
 ## Resources
 [Kaggle Data-Set](https://www.kaggle.com/nasa/kepler-exoplanet-search-results)
+
 [Features Description](https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html#pdisposition)

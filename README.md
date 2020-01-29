@@ -20,9 +20,9 @@ Redundant and un-necessary columns were removed, leaving the following eleven fe
 
 Descriptions of features: https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html#pdisposition
 
-The classes were turned to numerical values via 'LabelEncoder'. Feature data was scaled with 'MinMaxScaler' before running Random Forest and KNN models. 'GirdSearchCV' was then used to tune hyper-parameters of both models. 
+The classes were turned to numerical values via `LabelEncoder`. Feature data was scaled with `MinMaxScaler` before running Random Forest and KNN models. `GirdSearchCV` was then used to tune hyper-parameters of both models. 
 
-Hyper-parameters selected befre and after-tuning with 'GridSearchCV'
+Hyper-parameters selected befre and after-tuning with `GridSearchCV`
 Un-tuned Forest: n_estimators = 100
 Tuned Forest: n_estimators = 200, max_depth = 50
 Un-tuned KNN: n_neighbors = 5
@@ -62,5 +62,5 @@ Features of the orbited star were tested but found to be un-informative (koi_ste
 * Sklearn - version 0.22.1
 
 ## Resources
-https://www.kaggle.com/nasa/kepler-exoplanet-search-results
-https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html#pdisposition
+[Kaggle Data-Set](https://www.kaggle.com/nasa/kepler-exoplanet-search-results)
+[Features Description](https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html#pdisposition)

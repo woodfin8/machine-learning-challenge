@@ -41,6 +41,7 @@ The Tuned Random Forest model had the highest accuracy when classifying the test
 ###Features
 Sklearn's feature importance returend the following ranking
 |Score|Feature|Description|
+|---|---|---|
 |0.1539 |'koi_model_snr'|Transit Signal-to-Noise|
 |0.1473 |'koi_fpflag_nt'|Not Transit-Like Flag|
 |0.1409 |'koi_fpflag_co'|Centroid Offset Flag|

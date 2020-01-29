@@ -38,6 +38,23 @@ Tuned KNN: n_neighbors = 21, weights = distance
 
 The Tuned Random Forest model had the highest accuracy when classifying the test data. This was a slight improvement over its Un-Tuned version (less than 3 one-thousandths of a percent). Both the versions of the KNN model had lower accuracies than the Un-Tuned Random Forest's.
 
+###Features
+Sklearn's feature importance returend the following ranking
+|Score|Feature|Description|
+|0.1539 |'koi_model_snr'|Transit Signal-to-Noise|
+|0.1473 |'koi_fpflag_nt'|Not Transit-Like Flag|
+|0.1409 |'koi_fpflag_co'|Centroid Offset Flag|
+|0.1080|'koi_fpflag_ss'|Stellar Eclipse Flag|
+|0.1013|'koi_prad'|	Planetary Radius (Earth radii)|
+|0.0701|'koi_depth'|Transit Depth (parts per million)|
+|0.0671|'koi_period'|Orbital Period (days)|
+|0.0565|'koi_impact'|Impact Parameter|
+|0.0564|'koi_teq'|Equilibrium Temperature (Kelvin)|
+|0.0510|'koi_duration'|Transit Duration (hours)|
+|0.0475|'koi_fpflag_ec'| Ephemeris Match Indicates Contamination Flag|
+
+Features of the orbited star were tested but found to be un-informative (koi_steff, koi_slogg and koi_srad)
+
 ## Technologies
 * Jupyter notebook - version 4.1
 * Python - version 3.7.3

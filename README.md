@@ -38,7 +38,7 @@ Tuned KNN: n_neighbors = 21, weights = distance
 
 The Tuned Random Forest model had the highest accuracy when classifying the test data. This was a slight improvement over its Un-Tuned version (less than 3 one-thousandths of a percent). Both the versions of the KNN model had lower accuracies than the Un-Tuned Random Forest's.
 
-###Features
+### Features
 
 Sklearn's feature importance returend the following ranking
 

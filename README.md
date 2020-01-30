@@ -22,7 +22,7 @@ Descriptions of features: https://exoplanetarchive.ipac.caltech.edu/docs/API_kep
 
 The classes were turned to numerical values via `LabelEncoder`. Feature data was scaled with `MinMaxScaler` before running Random Forest and KNN models. `GirdSearchCV` was then used to tune hyper-parameters of both models. 
 
-#### Hyper-parameters selected befre and after-tuning with `GridSearchCV`
+#### Hyper-parameters selected before and after-tuning with `GridSearchCV`
 
 Un-tuned Forest: n_estimators = 100
 
